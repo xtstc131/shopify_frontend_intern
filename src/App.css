@@ -2,41 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .banner {
   position: fixed;
@@ -45,6 +10,48 @@
   bottom: 0;
   right: 0;
   z-index: 999;
+}
+
+.jumbotron {
+
+  margin-bottom: 0;
+  color: #2f353b;
+  /* background-image: linear-gradient(135deg, rgba(21, 186, 248, 0.6) 0%, rgba(21, 186, 248, 0.6) 42%, transparent 42%, transparent 53%, rgba(41, 145, 229, 0.6) 53%, rgba(41, 145, 229, 0.6) 62%, transparent 62%, transparent 88%, rgba(62, 104, 209, 0.6) 88%, rgba(62, 104, 209, 0.6) 100%), linear-gradient(45deg, transparent 0%, transparent 29%, rgb(31, 166, 238) 29%, rgb(31, 166, 238) 35%, rgb(41, 145, 229) 35%, rgb(41, 145, 229) 55%, transparent 55%, transparent 56%, rgb(62, 104, 209) 56%, rgb(62, 104, 209) 100%), linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255)); */
+  background-image: linear-gradient(135deg, hsl(345, 78%, 61%) 0%, hsl(345, 78%, 61%) 56%, hsl(30, 78%, 61%) 56%, hsl(30, 78%, 61%) 71%, hsl(75, 78%, 61%) 71%, hsl(75, 78%, 61%) 77%, hsl(120, 78%, 61%) 77%, hsl(120, 78%, 61%) 82%, hsl(165, 78%, 61%) 82%, hsl(165, 78%, 61%) 90%, hsl(210, 78%, 61%) 90%, hsl(210, 78%, 61%) 97%, hsl(255, 78%, 61%) 97%, hsl(255, 78%, 61%) 99%, hsl(300, 78%, 61%) 99%, hsl(300, 78%, 61%) 100%);
+}
+h1
+{
+  font-weight: 400;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #9ac4f8
+}
+h2
+{
+  font-weight: 400;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #9ac4f8
+}
+.lead {
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn_logo {
+  margin-left: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+
+.movie-info {
+  height: 600px;
+  overflow: auto;
+}
+
+.movie-item {
+  background-image: repeating-radial-gradient(circle at center center, transparent 0px, transparent 14px, rgba(0, 0, 0, 0.04) 14px, rgba(0, 0, 0, 0.04) 15px, transparent 15px, transparent 29px, rgba(0, 0, 0, 0.04) 29px, rgba(0, 0, 0, 0.04) 42px), repeating-radial-gradient(circle at center center, rgb(255, 255, 255) 0px, rgb(255, 255, 255) 4px, rgb(255, 255, 255) 4px, rgb(255, 255, 255) 7px, rgb(255, 255, 255) 7px, rgb(255, 255, 255) 12px, rgb(255, 255, 255) 12px, rgb(255, 255, 255) 13px);
+  background-size: 52px 52px;
 }
 
 /*newly added items start faded out and translated 400px upwards on the y-axis*/
@@ -90,8 +97,7 @@ img {
 }
 
 
-.title
-{
+.title {
   display: flex;
   justify-content: center;
   align-items: center;

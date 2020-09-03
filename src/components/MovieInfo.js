@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Image, Row, Col } from 'react-bootstrap'
-import FlipMove from "react-flip-move";
 
 const MovieInfo = (props) => {
 
@@ -17,14 +16,12 @@ const MovieInfo = (props) => {
     return nominated
   }
   return (
-    <FlipMove duration={250} easing="ease-in-out">
-
-      <div>
+      <div className="movie-info">
         {props.items ?
-          <ul className="list-group ">
+          <ul className="list-group movie-info">
 
             {props.items.map(item => (
-              <li key={item.imdbID} className="list-group-item ">
+              <li key={item.imdbID} className="list-group-item movie-item">
                 <Row >
                   <Col lassName = "title" >
                     <Image alt="movie-poster" src={item.Poster} onError={event => event.target.src = 'no_image_found.jpg'}/>
@@ -35,7 +32,9 @@ const MovieInfo = (props) => {
 
                   </Col>
                   <Col className = "title">
-                    <Button variant="primary" disabled={isNominated(item)} onClick={() => { props.setNominatedItems([...props.nominatedItems, item]) }} active>
+                    <Button 
+                    className="rounded-pill "
+                    variant="primary" disabled={isNominated(item)} onClick={() => { props.setNominatedItems([...props.nominatedItems, item]) }} active>
                       Nominated
                     </Button>
                   </Col>
@@ -45,7 +44,6 @@ const MovieInfo = (props) => {
           </ul>
           : ' '}
       </div>
-    </FlipMove>
 
   );
 }

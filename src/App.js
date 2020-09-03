@@ -45,7 +45,6 @@ function App() {
   useEffect(() => {
     //Store nominated movie at local storage
     window.localStorage.setItem(0, JSON.stringify(nominatedItems));
-
     //If 5 Movies have been nominated, set finish value to true. 
     if (nominatedItems.length === 5)
       setFinished(true)
@@ -66,9 +65,7 @@ function App() {
         <div className="d-flex justify-content-end">
         </div>
       </Alert>
-
       <Header />
-
       <Container>
         <Row >
           <Col >

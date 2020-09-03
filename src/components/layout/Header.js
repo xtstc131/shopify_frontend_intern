@@ -1,16 +1,24 @@
 import React from 'react';
 import { Jumbotron, Button } from 'react-bootstrap'
+// import github_logo from 'GitHub-Mark-64px.png';
 const Header = () => {
 
     return (
-        <Jumbotron>
-            <h1>OMDB Search Engine!</h1>
-            <p>
-                This is a simple hero unit, a simple jumbotron-style component for calling
-                extra attention to featured content or information.
+        <Jumbotron className="jumbotron">
+            <h1>The Shoppies</h1>
+            <h2>Movie awards for entrepreneurs</h2>
+            <p className="lead">
+                This is a simple Movie searching and nomination tool, a simple Websit that help manage  movie nominations for the upcoming Shoppies.
             </p>
             <p>
-                <Button variant="primary">Learn more</Button>
+                <Button
+                    className="rounded-pill"
+                    variant="outline-light"
+                    href="https://github.com/xtstc131/LinkedIn-Scraper"
+                >
+                    Github
+                <img className="btn_logo" src='GitHub-Mark-32px.png' alt="" />
+                </Button>
             </p>
         </Jumbotron>
     )
