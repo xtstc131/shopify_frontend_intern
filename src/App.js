@@ -58,19 +58,19 @@ function App() {
     <div className="App">
 
       <Alert show={finished} variant="success" className="banner" transition={null} >
-        <Alert.Heading>How's it going?!</Alert.Heading>
+        <Alert.Heading>Congratulations!</Alert.Heading>
         <p>
-          Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
-          lacinia odio sem nec elit. Cras mattis consectetur purus sit amet
-          fermentum.
+          You have finished nomination!
         </p>
         <hr />
         <div className="d-flex justify-content-end">
         </div>
       </Alert>
+
       <Header />
+
       <Container>
-        <Row className="justify-content-md-center my-3">
+        <Row >
           <Col >
             <SerchBar searchValue={searchValue} setSearchValue={setSearchValue} />
           </Col>

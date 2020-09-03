@@ -1,42 +1,36 @@
 import React from 'react';
-import { CSSTransition } from 'react-transition-group';
 import { Button } from 'react-bootstrap'
-
+import FlipMove from "react-flip-move";
 function NominationsMovies(props) {
 
-    const getNominationCount = () => {
-        if (props.nominations === undefined || props.nominations.length === 0) {
-            return '5 Choices Left';
-        } else if ((5 - props.nominations.length) > 1) {
-            return `${5 - props.nominations.length} Choices Left`;
-        } else if ((5 - props.nominations.length) === 1) {
-            return '1 Choice Left';
-        } else {
-            return 'No Choices Left'
-        }
-    };
+    const animationedCallback = (imdbID) => {
+        props.setNominatedItems(props.nominatedItems.filter(item => item.imdbID !== imdbID))
+    }
     const handleRemoveItem = (e) => {
-        const imdbID = e.target.getAttribute("imdbid")
-        props.setNominatedItems(props.nominatedItems.filter(item => item.imdbID !== imdbID));
-        // console.log(nominatedItems)
-    };
+        var target = e.target;
+        var parent = target.parentElement;
+        parent.classList.remove("new-item");
+        const imdbID = target.getAttribute("imdbid");
+        parent.addEventListener("animationend", animationedCallback(imdbID), false);
+        // parent.classList.add("removed-item");
+    }
     return (
         <div>
             {props.nominatedItems ?
                 <ul className="list-group  slide-fade" >
-                    {/* <CSSTransition
-                        timeout={300}
-                        classNames="fade"
-                        unmountOnExit> */}
-                    {
+
+                    <FlipMove duration={250} easing="ease-out">                    
+                        {
                         props.nominatedItems.map(nominatedItem => (
-                            <li key={nominatedItem.imdbID} className="list-group-item d-flex justify-content-between show"> <p className="p-0 m-0 flex-grow-1"> {nominatedItem.Title}({nominatedItem.Year})</p>
-                                <Button className="ml-4" variant="danger" imdbid={nominatedItem.imdbID} onClick={handleRemoveItem} active >
-                                    Remove
-                    </Button>
-                            </li>
-                        ))}
-                    {/* </CSSTransition> */}
+
+                        <li key={nominatedItem.imdbID} className="list-group-item d-flex justify-content-between" >
+                            <p className="p-0 m-0 flex-grow-1"> {nominatedItem.Title}({nominatedItem.Year})</p>
+                            <Button className="ml-4" variant="danger" imdbid={nominatedItem.imdbID} onClick={handleRemoveItem} active >
+                                Remove
+                                </Button>
+                        </li>
+                    ))}</FlipMove>
+
                 </ul>
                 : ' '}
         </div>
