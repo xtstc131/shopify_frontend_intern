@@ -9,11 +9,15 @@
   left: 0;
   bottom: 0;
   right: 0;
+  margin :0;
   z-index: 999;
 }
-
+.search-bar
+{
+  width: 600px;
+}
 .jumbotron {
-
+  height: 300px;
   margin-bottom: 0;
   color: #2f353b;
   /* background-image: linear-gradient(135deg, rgba(21, 186, 248, 0.6) 0%, rgba(21, 186, 248, 0.6) 42%, transparent 42%, transparent 53%, rgba(41, 145, 229, 0.6) 53%, rgba(41, 145, 229, 0.6) 62%, transparent 62%, transparent 88%, rgba(62, 104, 209, 0.6) 88%, rgba(62, 104, 209, 0.6) 100%), linear-gradient(45deg, transparent 0%, transparent 29%, rgb(31, 166, 238) 29%, rgb(31, 166, 238) 35%, rgb(41, 145, 229) 35%, rgb(41, 145, 229) 55%, transparent 55%, transparent 56%, rgb(62, 104, 209) 56%, rgb(62, 104, 209) 100%), linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255)); */
@@ -44,16 +48,38 @@ h2
   line-height: 1.5;
 }
 
-.movie-info {
+.search-results-placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.4em;
+}
+
+.movie-info-container
+{
+  /* background-color: #4dd0e1; */
   height: 600px;
-  overflow: auto;
+  left: 50%;
+
+}
+.movie-info {
+
+  height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
 }
 
 .movie-item {
-  background-image: repeating-radial-gradient(circle at center center, transparent 0px, transparent 14px, rgba(0, 0, 0, 0.04) 14px, rgba(0, 0, 0, 0.04) 15px, transparent 15px, transparent 29px, rgba(0, 0, 0, 0.04) 29px, rgba(0, 0, 0, 0.04) 42px), repeating-radial-gradient(circle at center center, rgb(255, 255, 255) 0px, rgb(255, 255, 255) 4px, rgb(255, 255, 255) 4px, rgb(255, 255, 255) 7px, rgb(255, 255, 255) 7px, rgb(255, 255, 255) 12px, rgb(255, 255, 255) 12px, rgb(255, 255, 255) 13px);
-  background-size: 52px 52px;
+  
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
 }
 
+.noimated-info
+{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
 /*newly added items start faded out and translated 400px upwards on the y-axis*/
 li.new-item {
   opacity: 0;
@@ -107,3 +133,7 @@ img {
   border-bottom: 1px solid #4dd0e1;
   box-shadow: 0 1px 0 0 #4dd0e1;
 }
+
+
+
+/* Search Bar Animation */

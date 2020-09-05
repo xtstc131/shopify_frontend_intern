@@ -16,15 +16,16 @@ function NominationsMovies(props) {
     }
     return (
         <div>
+            <span className="search-results-placeholder">Nominated Movies</span>
             {props.nominatedItems ?
-                <ul className="list-group  slide-fade" >
+                <ul className="list-group  noimated-info" >
 
                     <FlipMove duration={250} easing="ease-out">                    
                         {
                         props.nominatedItems.map(nominatedItem => (
 
                         <li key={nominatedItem.imdbID} className="list-group-item d-flex justify-content-between" >
-                            <p className="p-0 m-0 flex-grow-1"> {nominatedItem.Title}({nominatedItem.Year})</p>
+                            <p className="p-0 m-0"> {nominatedItem.Title}({nominatedItem.Year})</p>
                             <Button className="ml-4" variant="danger" imdbid={nominatedItem.imdbID} onClick={handleRemoveItem} active >
                                 Remove
                                 </Button>

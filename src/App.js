@@ -10,6 +10,7 @@ import './App.css';
 function App() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
+
   const [items, setItems] = useState([]);
   const [nominatedItems, setNominatedItems] = useState(() => {
     const stickyValue = window.localStorage.getItem(0);
@@ -30,9 +31,8 @@ function App() {
       .then(
         (result) => {
           if (result.Response === "True") {
-            setIsLoaded(true);
             setItems(result.Search);
-            // console.log(items)
+            setIsLoaded(true);
           }
           else {
             setIsLoaded(false);
@@ -74,7 +74,7 @@ function App() {
         </Row>
         <Row>
           <Col>
-            <MovieInfo items={items} setItems={setItems} nominatedItems={nominatedItems} setNominatedItems={setNominatedItems} />
+            <MovieInfo items={items} setItems={setItems} nominatedItems={nominatedItems} setNominatedItems={setNominatedItems} isLoaded={isLoaded} />
           </Col>
           <Col>
             <NominationsMovies nominatedItems={nominatedItems} setNominatedItems={setNominatedItems} />
