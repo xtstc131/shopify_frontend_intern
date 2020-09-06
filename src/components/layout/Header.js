@@ -14,7 +14,7 @@ const Header = () => {
                 <Button
                     className="rounded-pill"
                     variant="outline-light"
-                    href="https://github.com/xtstc131/LinkedIn-Scraper"
+                    href="https://github.com/xtstc131/shopify_frontend_intern"
                 >
                     Github
                 <img className="btn_logo" src='GitHub-Mark-32px.png' alt="" />

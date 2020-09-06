@@ -33,6 +33,7 @@ function App() {
           if (result.Response === "True") {
             setItems(result.Search);
             setIsLoaded(true);
+            // setError(null);
           }
           else {
             setIsLoaded(false);
@@ -74,7 +75,7 @@ function App() {
         </Row>
         <Row>
           <Col>
-            <MovieInfo items={items} setItems={setItems} nominatedItems={nominatedItems} setNominatedItems={setNominatedItems} isLoaded={isLoaded} />
+            <MovieInfo items={items} setItems={setItems} nominatedItems={nominatedItems} setNominatedItems={setNominatedItems} isLoaded={isLoaded}  error={error}/>
           </Col>
           <Col>
             <NominationsMovies nominatedItems={nominatedItems} setNominatedItems={setNominatedItems} />

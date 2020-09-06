@@ -41,19 +41,21 @@ const MovieInfo = (props) => {
       </ul>
       : ' ')
   return (
+    <div className="movie-info-container">
       <Container >
         <Row  className="justify-content-md-center">
             {<span className="search-results-placeholder d-flex justify-content-center">Search Results</span>}
         </Row>
-        <Row  className="justify-content-md-center"> 
-          {!props.isLoaded &&
+        <Row  className="justify-content-md-center">
+          {props.error !== null && <span className="error-info">Ops, No results....</span>}
+          { props.error === null && !props.isLoaded &&
             <Spinner animation="border" role="status" variant="info" >
               <span className="sr-only">Loading...</span>
             </Spinner>}
           {props.isLoaded && movieList}
         </Row>
       </Container>
-
+</div>
 
   );
 }

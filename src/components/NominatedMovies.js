@@ -15,7 +15,7 @@ function NominationsMovies(props) {
         // parent.classList.add("removed-item");
     }
     return (
-        <div>
+        <div className="noimated-info-container">
             <span className="search-results-placeholder">Nominated Movies</span>
             {props.nominatedItems ?
                 <ul className="list-group  noimated-info" >
