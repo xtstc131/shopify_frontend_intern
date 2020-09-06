@@ -7,9 +7,6 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 <!-- PROJECT LOGO -->
 <br />
@@ -76,6 +73,10 @@ git clone https://github.com/xtstc131/shopify_frontend_intern.git
 npm install
 ```
 
+### Run
+```sh
+npm start
+```
 <!-- LICENSE -->
 ## License
 
@@ -94,14 +95,12 @@ Project Link: [https://github.com/xtstc131/shopify_frontend_intern](https://gith
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=flat-square
-[contributors-url]: https://github.com/github_username/repo/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=flat-square
 [forks-url]: https://github.com/xtstc131/shopify_frontend_intern/network/members
 [stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=flat-square
-[stars-url]:  https://github.com/xtstc131/shopify_frontend_intern/stargazers
+[stars-url]:https://github.com/xtstc131/shopify_frontend_intern/stargazers
 [license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=flat-square
-[license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
+[license-url]: https://github.com/xtstc131/shopify_frontend_intern/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/tian-xia-17b701197/
 [product-screenshot]: images/screenshot.png
