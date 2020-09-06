@@ -5,7 +5,7 @@ import SerchBar from './components/SearchBar'
 import MovieInfo from './components/MovieInfo'
 import NominationsMovies from './components/NominatedMovies'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
+import './App.scss';
 
 function App() {
   const [error, setError] = useState(null);

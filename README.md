@@ -7,10 +7,8 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 <!-- PROJECT LOGO -->
@@ -20,19 +18,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">YOUR_TITLE</h3>
+  <h3 align="center">The Shoppies</h3>
 
   <p align="center">
-    YOUR_SHORT_DESCRIPTION
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    This is a simple Movie searching and nomination tool
   </p>
 </p>
 
@@ -45,31 +34,23 @@
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
-* [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![The Shoppies Screen Shot][product-screenshot]](https://shoppies-malloxia.netlify.app)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`
+[Try it here](https://shoppies-malloxia.netlify.app)
 
-
+This is a simple Movie searching and nomination tool, a simple Websit that help manage movie nominations for the upcoming Shoppies.
 ### Built With
 
-* []()
-* []()
-* []()
-
-
+* [react-bootstrap](https://github.com/react-bootstrap/react-bootstrap)
+* [React](https://github.com/facebook/react)
+* [react-flip-move](https://github.com/joshwcomeau/react-flip-move)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -88,28 +69,24 @@ npm install npm@latest -g
 
 1. Clone the repo
 ```sh
-git clone https://github.com/github_username/repo_name.git
+git clone https://github.com/xtstc131/shopify_frontend_intern.git
 ```
 2. Install NPM packages
 ```sh
 npm install
 ```
 
-
-
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
-
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Tian Xia - txia11@yahoo.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/xtstc131/shopify_frontend_intern](https://github.com/xtstc131/shopify_frontend_intern)
 
 
 
@@ -120,13 +97,11 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=flat-square
 [contributors-url]: https://github.com/github_username/repo/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=flat-square
-[forks-url]: https://github.com/github_username/repo/network/members
+[forks-url]: https://github.com/xtstc131/shopify_frontend_intern/network/members
 [stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=flat-square
-[stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=flat-square
-[issues-url]: https://github.com/github_username/repo/issues
+[stars-url]:  https://github.com/xtstc131/shopify_frontend_intern/stargazers
 [license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=flat-square
 [license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username
+[linkedin-url]: https://www.linkedin.com/in/tian-xia-17b701197/
 [product-screenshot]: images/screenshot.png
