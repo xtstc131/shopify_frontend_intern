@@ -1,0 +1,84 @@
+.movie-info-container {
+  /* height: 500px; */
+  background-color: #fff;
+  border: 1px solid #eee;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+  transition: .3s;
+
+}
+
+.movie-info {
+
+  height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+.movie-item {
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+}
+
+img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-info {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+
+/*newly added items start faded out and translated 400px upwards on the y-axis*/
+li.new-item {
+  opacity: 0;
+  animation: new-item-animation .3s linear forwards;
+}
+
+@keyframes new-item-animation {
+  from {
+    opacity: 0;
+    transform: translateY(-400px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+li.removed-item {
+  animation: removed-item-animation 1s cubic-bezier(0.55, -0.04, 0.91, 0.94) forwards;
+  /*transform origin is moved to the bottom left corner*/
+  transform-origin: 0% 100%;
+}
+
+@keyframes removed-item-animation {
+  0% {
+    opacity: 1;
+    transform: rotateZ(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(600px) rotateZ(90deg);
+  }
+}

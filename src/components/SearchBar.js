@@ -1,6 +1,6 @@
 import React from 'react';
 import { Form } from 'react-bootstrap'
-
+import './SearchBar.scss'
 function SearchBar(props) {
     const onChangeForm = (event) => {
         props.setSearchValue(event.target.value)

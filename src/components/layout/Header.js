@@ -1,5 +1,6 @@
 import React from 'react';
-import { Jumbotron, Button } from 'react-bootstrap'
+import { Jumbotron, Button } from 'react-bootstrap';
+import './Header.scss'
 // import github_logo from 'GitHub-Mark-64px.png';
 const Header = () => {
 

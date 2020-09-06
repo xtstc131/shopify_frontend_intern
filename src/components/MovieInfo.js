@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Image, Row, Col, Spinner, Container } from 'react-bootstrap'
-
+import './MovieInfo.scss'
 const MovieInfo = (props) => {
 
   //Check whether a Moive is nominated or not.

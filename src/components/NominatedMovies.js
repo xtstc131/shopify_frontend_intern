@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap'
 import FlipMove from "react-flip-move";
+import './NominatedMovies.scss'
 function NominationsMovies(props) {
 
     const animationedCallback = (imdbID) => {
@@ -26,7 +27,7 @@ function NominationsMovies(props) {
 
                         <li key={nominatedItem.imdbID} className="list-group-item d-flex justify-content-between" >
                             <p className="p-0 m-0"> {nominatedItem.Title}({nominatedItem.Year})</p>
-                            <Button className="ml-4" variant="danger" imdbid={nominatedItem.imdbID} onClick={handleRemoveItem} active >
+                            <Button className="ml-4 button-delete" variant="danger" imdbid={nominatedItem.imdbID} onClick={handleRemoveItem} active >
                                 Remove
                                 </Button>
                         </li>

@@ -1,0 +1,18 @@
+.search-results-placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.4em;
+}
+
+/* Search Bar */
+.search-bar-container {
+    /* height: 500px; */
+    /* background-color: #9ac4f8; */
+    border: 1px solid #eee;
+    padding: 20px;
+    width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+    transition: .3s;
+    margin-bottom: 10px;
+}
