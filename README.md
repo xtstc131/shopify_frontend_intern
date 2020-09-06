@@ -11,7 +11,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/xtstc131/shopify_frontend_intern">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -71,11 +71,15 @@ git clone https://github.com/xtstc131/shopify_frontend_intern.git
 2. Install NPM packages
 ```sh
 npm install
+#or 
+yarn install
 ```
 
 ### Run
 ```sh
 npm start
+#or
+yarn start
 ```
 <!-- LICENSE -->
 ## License
