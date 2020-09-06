@@ -26,7 +26,7 @@ function App() {
     setItems(null)
     setError(null)
     setIsLoaded(false)
-    fetch(`http://www.omdbapi.com/?type=movie&s=${searchValue}&apikey=${process.env.REACT_APP_OMDB_API_KEY}`)
+    fetch(`https://www.omdbapi.com/?type=movie&s=${searchValue}&apikey=${process.env.REACT_APP_OMDB_API_KEY}`)
       .then(res => res.json())
       .then(
         (result) => {
@@ -75,7 +75,7 @@ function App() {
         </Row>
         <Row>
           <Col>
-            <MovieInfo items={items} setItems={setItems} nominatedItems={nominatedItems} setNominatedItems={setNominatedItems} isLoaded={isLoaded}  error={error}/>
+            <MovieInfo items={items} setItems={setItems} nominatedItems={nominatedItems} setNominatedItems={setNominatedItems} isLoaded={isLoaded} error={error} />
           </Col>
           <Col>
             <NominationsMovies nominatedItems={nominatedItems} setNominatedItems={setNominatedItems} />
